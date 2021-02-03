@@ -1,4 +1,12 @@
-<p>header</p>
-<h1> hello showkats maheshs</h1>
-<p> not hello</p>
-
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Metro Opticals</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="menu" class="collapse navbar-collapse">
+    <ul *ngFor="let menu of menus" class="navbar-nav ml-auto topnav">
+      <li class="nav-item"><a class="nav-link">
+         <span class="align-middle">{{menu.name}}</span></a></li>
+    </ul>
+  </div>
+</nav>
