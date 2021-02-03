@@ -1,0 +1,12 @@
+<div id="a" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#carousel" *ngFor="let banner of banners; index as i"  class="active"></li>
+  </ul> <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div *ngFor="let banner of banners" class="carousel-item"> <img [src]="banner.url" [alt]="banner.text"> </div>
+  </div> <!-- Left and right controls --> <a class="carousel-control-prev" href="#carousel" data-slide="prev"> <i
+      class="material-icons nav-icon">chevron_left</i> </a> <a class="carousel-control-next" href="#carousel"
+    data-slide="next"> <i class="material-icons nav-icon">chevron_right</i> </a>
+</div>
+
