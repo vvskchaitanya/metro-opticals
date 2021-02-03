@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-path docs --base-href /metro-opticals/",
+    "build": "ng build --output-path docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
