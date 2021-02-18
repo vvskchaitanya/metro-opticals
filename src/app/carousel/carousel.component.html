@@ -1,7 +1,7 @@
-<div id="a" class="carousel slide" data-ride="carousel">
+<div id="carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ul class="carousel-indicators">
-    <li data-target="#carousel" *ngFor="let banner of banners; index as i"  class="active"></li>
+    <li data-target="#carousel" *ngFor="let banner of banners; index as i" data-slide-to="{i}"></li>
   </ul> <!-- The slideshow -->
   <div class="carousel-inner">
     <div *ngFor="let banner of banners" class="carousel-item"> <img [src]="banner.url" [alt]="banner.title"> </div>
