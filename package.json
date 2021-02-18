@@ -5,7 +5,7 @@
   "author": "V.V.S.K",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port=3000",
     "build": "ng build --output-path docs",
     "test": "ng test",
     "lint": "ng lint",
