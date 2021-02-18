@@ -106,9 +106,9 @@ function CarouselComponent_div_4_Template(rf, ctx) { if (rf & 1) {
 class CarouselComponent {
     constructor(service) {
         this.banners = [];
-        this.banners.push({ title: 'image1', url: '/image1.jpg' });
-        this.banners.push({ title: 'image2', url: '/image2.jpeg' });
-        this.banners.push({ title: 'image1', url: '/image3.jpeg' });
+        this.banners.push({ title: 'image1', url: '/assets/image1.jpg' });
+        this.banners.push({ title: 'image2', url: '/assets/image2.jpeg' });
+        this.banners.push({ title: 'image1', url: '/assets/image3.jpeg' });
     }
     ngOnInit() {
     }
