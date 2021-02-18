@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { environment } from '../environments/environment';
 import { FooterComponent } from './footer/footer.component';
+import { TrendsComponent } from './trends/trends.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HeaderComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    TrendsComponent
   ],
   imports: [
     BrowserModule,
