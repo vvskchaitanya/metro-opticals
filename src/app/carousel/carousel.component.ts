@@ -18,6 +18,9 @@ export class CarouselComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    setTimeout(function() {
+        eval("$($('.carousel-inner')[0].children[0]).addClass('active');");
+        }, 500);
   }
 
 }

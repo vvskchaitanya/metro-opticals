@@ -111,10 +111,13 @@ class CarouselComponent {
         this.banners.push({ title: 'image1', url: '/assets/image3.jpeg' });
     }
     ngOnInit() {
+        setTimeout(function () {
+            eval("$($('.carousel-inner')[0].children[0]).addClass('active');");
+        }, 500);
     }
 }
 CarouselComponent.ɵfac = function CarouselComponent_Factory(t) { return new (t || CarouselComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_firestore_service__WEBPACK_IMPORTED_MODULE_1__["FirestoreService"])); };
-CarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CarouselComponent, selectors: [["app-carousel"]], decls: 12, vars: 2, consts: [["id", "carousel", "data-ride", "carousel", 1, "carousel", "slide"], [1, "carousel-indicators"], ["data-target", "#carousel", "data-slide-to", "{i}", 4, "ngFor", "ngForOf"], [1, "carousel-inner"], ["class", "carousel-item", 4, "ngFor", "ngForOf"], ["href", "#carousel", "data-slide", "prev", 1, "carousel-control-prev"], [1, "material-icons", "nav-icon"], ["href", "#carousel", "data-slide", "next", 1, "carousel-control-next"], ["data-target", "#carousel", "data-slide-to", "{i}"], [1, "carousel-item"], [3, "src", "alt"]], template: function CarouselComponent_Template(rf, ctx) { if (rf & 1) {
+CarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CarouselComponent, selectors: [["app-carousel"]], decls: 12, vars: 2, consts: [["id", "carousel", "data-ride", "carousel", 1, "carousel", "slide"], [1, "carousel-indicators"], ["data-target", "#carousel", 4, "ngFor", "ngForOf"], [1, "carousel-inner"], ["class", "carousel-item", 4, "ngFor", "ngForOf"], ["href", "#carousel", "data-slide", "prev", 1, "carousel-control-prev"], [1, "material-icons", "nav-icon"], ["href", "#carousel", "data-slide", "next", 1, "carousel-control-next"], ["data-target", "#carousel"], [1, "carousel-item"], [3, "src", "alt"]], template: function CarouselComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "ul", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, CarouselComponent_li_2_Template, 1, 0, "li", 2);
