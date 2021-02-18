@@ -12,7 +12,9 @@ export class CarouselComponent implements OnInit {
 
   banners:Banner[]=[];
   constructor(service:FirestoreService) {
-    service.bannerRef.valueChanges().subscribe(res=>{this.banners=res;});
+    this.banners.push({title:'image1',url:'/image1.jpg'});
+    this.banners.push({title:'image2',url:'/image2.jpeg'});
+    this.banners.push({title:'image1',url:'/image3.jpeg'});
    }
 
   ngOnInit(): void {

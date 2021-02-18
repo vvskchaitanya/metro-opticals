@@ -6,6 +6,5 @@ export type Menu={
 
 export type Banner={
   title:string;
-  order:string;
   url:string;
 }

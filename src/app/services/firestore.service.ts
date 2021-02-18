@@ -7,9 +7,7 @@ import { Menu,Banner } from '../models/models';
 })
 export class FirestoreService {
   menuRef:AngularFirestoreCollection<Menu>;
-  bannerRef:AngularFirestoreCollection<Banner>;
   constructor(firestore:AngularFirestore) {
     this.menuRef = firestore.collection<Menu>('menus', ref => ref.orderBy('order'));
-    this.bannerRef= firestore.collection<Banner>('banners', ref => ref.orderBy('order'));
   }
 }

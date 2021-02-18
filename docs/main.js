@@ -106,7 +106,9 @@ function CarouselComponent_div_4_Template(rf, ctx) { if (rf & 1) {
 class CarouselComponent {
     constructor(service) {
         this.banners = [];
-        service.bannerRef.valueChanges().subscribe(res => { this.banners = res; });
+        this.banners.push({ title: 'image1', url: '/image1.jpg' });
+        this.banners.push({ title: 'image2', url: '/image2.jpeg' });
+        this.banners.push({ title: 'image1', url: '/image3.jpeg' });
     }
     ngOnInit() {
     }
@@ -192,7 +194,6 @@ __webpack_require__.r(__webpack_exports__);
 class FirestoreService {
     constructor(firestore) {
         this.menuRef = firestore.collection('menus', ref => ref.orderBy('order'));
-        this.bannerRef = firestore.collection('banners', ref => ref.orderBy('order'));
     }
 }
 FirestoreService.ɵfac = function FirestoreService_Factory(t) { return new (t || FirestoreService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_1__["AngularFirestore"])); };
